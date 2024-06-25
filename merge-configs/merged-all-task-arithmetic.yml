@@ -1,0 +1,15 @@
+models:
+  - model: daiandy/humanities-model
+    parameters:
+      weight: 1.0
+  - model: daiandy/doctor-model
+    parameters:
+      weight: 1.0
+  - model: daiandy/math-model
+    parameters:
+      weight: 1.0
+merge_method: task_arithmetic
+base_model: daiandy/humanities-model
+parameters:
+    normalize: true
+dtype: float16

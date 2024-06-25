@@ -1,0 +1,11 @@
+models:
+  - model: daiandy/humanities-model
+    parameters:
+      weight: 1.0
+  - model: daiandy/doctor-model
+    parameters:
+      weight: 1.0
+merge_method: linear
+parameters:
+    normalize: true
+dtype: float16

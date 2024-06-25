@@ -1,0 +1,20 @@
+slices:
+  - sources:
+      - model: daiandy/merged-math-doctor-model
+        layer_range: [0, 31]
+      - model: daiandy/humanities-model
+        layer_range: [0, 31]
+# or, the equivalent models: syntax:
+# models:
+#   - model: psmathur/orca_mini_v3_13b
+#   - model: garage-bAInd/Platypus2-13B
+merge_method: slerp
+base_model: daiandy/merged-math-doctor-model
+parameters:
+  t:
+    - filter: self_attn
+      value: [0.67, 0.67, 0.67, 0.67, 0.67]
+    - filter: mlp
+      value: [0.67, 0.67, 0.67, 0.67, 0.67]
+    - value: 0.67 # fallback for rest of tensors
+dtype: float16
