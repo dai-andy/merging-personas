@@ -6,4 +6,4 @@ Repository for paper ["Merging ‘Personas’ in Multi-Agent Systems of Language
 Models were merged using mergekit (https://github.com/arcee-ai/mergekit) and hosted on HuggingFace and are publicly accessible (https://huggingface.co/daiandy). 
 
 
-Special thanks also to the paper ['Improving Factuality and Reasoning in Language Models through Multiagent Debate'](https://composable-models.github.io/llm_debate/). Much of our code was adapted from their repository (https://github.com/composable-models/llm_multiagent_debate).
+Special thanks also to the paper ['Improving Factuality and Reasoning in Language Models through Multiagent Debate'](https://composable-models.github.io/llm_debate/).
